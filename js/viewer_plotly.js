@@ -40,7 +40,6 @@ function makeLinesDataTraces(dtype) {
   var i,j;
   var ret=[];
   var xval=[];
-  var name=uid+model;
 
   for(i=0; i<psz; i++) {
     var uid=pPlot_uid[i];
@@ -67,7 +66,7 @@ function makeLinesDataTraces(dtype) {
     var t={ 
         x:xval,
         y:yval,
-        name:name,
+        name:uid+model,
         marker: marker_val, 
         line: {width:3, opacity:1},
         mode: "lines+markers",
