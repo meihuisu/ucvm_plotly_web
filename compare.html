@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<head>
+<title>UCVM Profile Plots</title>
+
+<link rel="stylesheet" href="css/vendor/jquery-ui.css">
+<link rel="stylesheet" href="css/vendor/bootstrap.min.css">
+<link rel="stylesheet" href="css/vendor/bootstrap-grid.min.css">
+<link rel="stylesheet" href="css/vendor/glyphicons.css">
+<link rel="stylesheet" href="css/ucvm-ui.css">
+
+<script type='text/javascript' src='js/vendor/plotly.min.js'></script>
+<script type='text/javascript' src='js/vendor/jquery.js'></script>
+<script type='text/javascript' src='js/vendor/jquery-ui.js'></script>
+<script type='text/javascript' src='js/vendor/jquery.csv.js'></script>
+<script type='text/javascript' src='js/vendor/bootstrap.min.js'></script>
+<script type='text/javascript' src='js/vendor/popper.min.js'></script>
+
+<script type='text/javascript' src='js/viewer_plotly.js'></script>
+<script type='text/javascript' src='js/viewer_util.js'></script>
+<script type='text/javascript' src='js/viewer_ui.js'></script>
+<script type='text/javascript' src='js/viewer.js'></script>
+</head>
+<body>
+   <div id="display" style="display:none"></div>
+   <div class="col-6">
+    <div class="input-group filters mb-2 mt-3">
+      <div class="input-group-prepend">
+        <label class="input-group-text" for="dataType" >Select Data Type</label>
+      </div>
+      <select id="dataType" class="custom-select">
+        <option value="vs">vs</option>
+        <option value="vp">vp</option>
+        <option value="density">density</option>
+      </select>
+      <button id="plotBtn" title="plot it!!" class="btn btn-default ucvm-small-btn" onclick="refreshPlot()"><span class="glyphicon glyphicon-search"></span>
+      </button>
+    </div>
+  </div>
+
+<!--- MAIN PLOT -->
+<div id="myDiv" style="display:inline;" ></div>
+
+</body>
+</html>
