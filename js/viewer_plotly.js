@@ -20,10 +20,10 @@ function addLinesPlot(dtype) {
   var _data=makeLinesDataTraces(dtype,pPlot_data);
 
   var yaxis="Depth (m)";
-  var xaxis="Vs (m/s)";
+  var xaxis="Vs (km/s)";
 
   if(dtype=="vp") {
-    xaxis="Vp (m/s)";
+    xaxis="Vp (km/s)";
   }
   if(dtype=="density") {
     xaxis="Rho (g/cm^3)";
