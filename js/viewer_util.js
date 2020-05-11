@@ -112,7 +112,8 @@ function handleMessage(e) {
     // Reference to element for data display
     var el = document.getElementById('display');
     // Check origin
-    if ( e.origin === 'http://localhost' ) {
+    if ( e.origin === 'http://moho.scec.org' ||
+	         e.origin === 'http://localhost' ) {
         //Retrieve data sent in postMessage
         //decodeURI(e.data);
         //el.innerHTML = e.data;
