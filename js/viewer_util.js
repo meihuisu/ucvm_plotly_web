@@ -33,8 +33,8 @@ function loadAndProcessFromUID(ulist) {
 
   for(i=0;i<sz;i++) {
      var uid=ulist[i];
-     var mpfname=uid+"vertical_matprops.json";
-     var metafname=uid+"vertical_meta.json";
+     var mpfname=uid+"_v_matprops.json";
+     var metafname=uid+"_v_meta.json";
      var mp=ckExist("data/"+mpfname);
      if(mp == null) {
         window.console.log("ERROR, can not read ",mpfname);
